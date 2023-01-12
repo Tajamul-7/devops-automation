@@ -21,7 +21,7 @@ pipeline {
             steps{
                 script{
                   withCredentials([string(credentialsId: 'java-techie', variable: 'dockerhubpwd')]) {
-    // some block
+   
 }
 
                    sh 'docker push javatechie/devops-integration'
